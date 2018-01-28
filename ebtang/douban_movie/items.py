@@ -13,14 +13,9 @@ from scrapy.loader.processors import TakeFirst, Compose
 class DoubanMovieItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    rank = Field()
-    picture = Field()
-    picture_path = Field()
+    ebtang_id = Field()
     title = Field()
-    info = Field()
-    star = Field()
-    people = Field()
-    quote = Field()
+    date = Field()
     crawl_time = Field()
 
 

@@ -20,10 +20,10 @@ class DoubanSpider(CrawlSpider):
         'https://movie.douban.com/top250',
     )
 
-    rules = (
-        Rule(LinkExtractor(allow=(r"https://movie\.douban\.com/top250\?start=\d+&filter=")),
-             callback='parse_item'),
-    )
+    #rules = (
+    #    Rule(LinkExtractor(allow=(r"https://movie\.douban\.com/top250\?start=\d+&filter=")),
+    #         callback='parse_item'),
+    #)
 
     def parse_item(self, response):
         for item in response.xpath('//div[@id="content"]/div/div[1]/ol/li'):

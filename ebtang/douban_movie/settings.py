@@ -21,7 +21,7 @@ DB_ARGS = {
     'port': 3306,
     'user': 'root',
     'passwd': 'root@asdf',
-    'db': 'douban',
+    'db': 'ebtang',
     'charset': 'utf8',
     'use_unicode': True,
 }
